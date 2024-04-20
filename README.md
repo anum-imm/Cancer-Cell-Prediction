@@ -1,38 +1,11 @@
-# Cancer-Cell-Prediction
-Present here you can find various models specifically designed to curate to the various undermentioned datasets on various popular algorithms which are highly accepted on this type of data.
-My main objective was to use the various cancer related classification datasets that are publicly available and are found easily to predict cancer malignancy.
-In all you can find a comparative analysis of each algorithm with respect to the dataset used.
+ a brief description of the changes made to achieve improved accuracy in the code:
 
-## Datasets used
-- Breast Cancer Wisconsin (Diagnostic) Dataset
-- Lung Cancer Dataset
-- Prostate Cancer Dataset
-- Brain Tumour Dataset
+1. **Algorithm Selection**: In the previous code, only Logistic Regression, Decision Tree, Random Forest, and Gaussian Naive Bayes classifiers were used. In the improved version, Support Vector Machine (SVM), Gradient Boosting, and Multi-layer Perceptron (MLP) Neural Network classifiers were added, which are more complex algorithms that may capture nonlinear relationships better.
 
-![image](https://user-images.githubusercontent.com/42437393/106113101-161c8300-6174-11eb-86d4-7b98814f1dfa.png)
+2. **Data Preprocessing**: Standardization of features using StandardScaler was applied in both versions of the code. This preprocessing step ensures that each feature contributes equally to the model fitting, preventing features with larger scales from dominating the learning process.
 
-## Algorithms used
-- Logistic Regression
-- Decision Tree Classifier
-- Random Forest Classifier
-- Gaussian Naive Bayes
+3. **Feature Selection**: Although not explicitly implemented in the provided code, feature selection can significantly impact model performance. In the improved version, adding more sophisticated algorithms might implicitly select relevant features by learning from the data.
 
-## Results
-### Logistic Regression
-![image](https://user-images.githubusercontent.com/42437393/106114723-e7071100-6175-11eb-87ea-b45e66688744.png)
+4. **Model Evaluation**: The evaluation step remained the same, where classification reports and accuracy scores were computed for each model on the test set. However, the improved version includes evaluation for additional models, providing a more comprehensive comparison of performance.
 
-### Decision Tree Classifier
-![image](https://user-images.githubusercontent.com/42437393/106114644-cc349c80-6175-11eb-8621-3547ec496ff8.png)
-
-### Random Forest Classifier
-![image](https://user-images.githubusercontent.com/42437393/106114839-0d2cb100-6176-11eb-9af7-fecd3de7ae4b.png)
-
-### Gaussian Naive Bayes
-![image](https://user-images.githubusercontent.com/42437393/106114931-2cc3d980-6176-11eb-902e-19f48728c2d8.png)
-
-## Further Work
-I am working on a model which further can classify and get better results than the above mentioned algorithms. The results which I have achieved so far are shown below.
-
-![image](https://user-images.githubusercontent.com/42437393/106115397-becbe200-6176-11eb-86b6-644c8877ae61.png)
-
-In future I look forward to improve the major defects in my model and algorithm like reducing high time and space consumption that it faces for larger datasets and further improve the accuracy.
+Overall, these changes aim to enhance the accuracy of the classification models by incorporating more diverse and potentially more powerful algorithms and ensuring proper data preprocessing.
